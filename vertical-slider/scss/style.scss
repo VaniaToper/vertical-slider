@@ -1,0 +1,102 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: Roboto;
+}
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  &:active{
+    cursor: grabbing;
+  }
+}
+.leftside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 35%;
+  transition: 0.5s ease-in-out;
+  &__body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text {
+    color: white;
+  }
+  &__title {
+    font-size: 4vw;
+  }
+  &__subtitle {
+    font-size: 2.5vw;
+  }
+}
+.rightside {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  height: 100%;
+  width: 65%;
+  transition: 0.5s ease-in-out;
+  &__background {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+.action__buttons {
+  button {
+    z-index: 100;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+  }
+  &__up {
+    transform: translateY(-100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  &__down {
+    transform: translateX(-100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+.arrowDown {
+  transform: rotate(180deg);
+}
+
+.button {
+  background: white;
+  height: 60px;
+  width: 55px;
+  &:hover {
+    transition: 0.2s;
+    background: rgb(235, 235, 235);
+    .arrow {
+      transition: 0.2s;
+      fill: rgb(143, 143, 143);
+    }
+  }
+  &:active {
+    transition: 0.2s;
+    background: rgb(212, 212, 212);
+    .arrow {
+      transition: 0.2s;
+      fill: rgb(129, 129, 129);
+    }
+  }
+}
+
+.arrow {
+  transition: 0.2s;
+  fill: rgb(151, 151, 151);
+}

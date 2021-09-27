@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vertical Slider</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="leftside">
+        <div class="leftside__body" style="background-color: #64C7FF;">
+          <h1 class="leftside__title text">Polar Lights</h1>
+          <p class="leftside__subtitle text">all in blue</p>
+        </div>
+        <div class="leftside__body" style="background-color: #F85C50;">
+          <h1 class="leftside__title text">Mountains</h1>
+          <p class="leftside__subtitle text">all in red</p>
+        </div>
+        <div class="leftside__body"style="background-color: #EEDC7C;">
+          <h1 class="leftside__title text">Night Town</h1>
+          <p class="leftside__subtitle text">all in yellow</p>
+        </div>
+        <div class="leftside__body" style="background-color: #A7E541;">
+          <h1 class="leftside__title text">Nature Flower</h1>
+          <p class="leftside__subtitle text">all in green</p>
+        </div>
+      </aside>
+      <main class="rightside">
+        <div class="rightside__background" style="background-image: url(img/img1.jpg);"></div>
+        <div class="rightside__background" style="background-image: url(img/img2.jpg);"></div>
+        <div class="rightside__background" style="background-image: url(img/img3.jpg);"></div>
+        <div class="rightside__background" style="background-image: url(img/img4.jpg);"></div>
+      </main>
+      <div class="action__buttons">
+        <button class="action__buttons__up button" id="upBtn">
+          <svg class="arrowUp arrow"width="25px" height="25px"">
+            <use xlink:href="sprite.svg#arrow"></use>
+          </svg>
+        </button>
+        <button class="action__buttons__down button" id="downBtn">
+          <svg class="arrowDown arrow" width="25px" height="25px">
+            <use xlink:href="sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
